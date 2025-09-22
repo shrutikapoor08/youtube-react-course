@@ -42,25 +42,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ===== TYPOGRAPHY ===== */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  line-height: 1.2;
-  margin: 0;
-  color: var(--foreground);
-}
-
-h1 {
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  line-height: 1.1;
-}
-
 /* ===== INTERACTIVE ELEMENTS ===== */
 a {
   font-weight: 500;
