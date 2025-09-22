@@ -13,6 +13,4 @@ const MovieCard = ({ movie }) => {
     </Card>)
 }
 
-:: before
-
 export default MovieCard;
