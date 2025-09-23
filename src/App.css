@@ -27,6 +27,10 @@
   --netflix-gray: #2f2f2f;
 }
 
+#root {
+  margin: auto;
+}
+
 /* ===== BASE STYLES ===== */
 *,
 *::before,
