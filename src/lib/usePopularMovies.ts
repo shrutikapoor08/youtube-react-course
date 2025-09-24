@@ -4,8 +4,6 @@ import useBaseMovieStore from "@/store/moviesStore";
 
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
 
-
-
 export function usePopularMovies() {
     const [movies, setMovies] = useState<Movie[] | null>(null);
     const [error, setError] = useState<string | null>(null);

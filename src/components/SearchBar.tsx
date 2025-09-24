@@ -3,6 +3,7 @@ import { useState } from "react";
 import useSearchStore from "../store/searchStore";
 import useBaseMovieStore from "@/store/moviesStore";
 import performSearch from "../lib/performSearch";
+import { useNavigate } from '@tanstack/react-router';
 
 export default function SearchBar() {
     const [shouldShowSearch, setShouldShowSearch] = useState(false);
@@ -10,18 +11,10 @@ export default function SearchBar() {
     const baseMovies = useBaseMovieStore(state => state.baseMovies);
     const setResults = useSearchStore(state => state.setResults);
 
-
-    const handleBlur = () => {
-        setShouldShowSearch(false);
-    }
-    const handleSearchClick = () => {
-        setShouldShowSearch(true);
-    };
-
+    const navigate = useNavigate();
 
     const searchQuery = (query: string) => {
         const matchingTitles = performSearch(query, baseMovies);
-        console.log('Matching Titles:', matchingTitles.data);
         setResults(matchingTitles.data);
     };
 
@@ -32,13 +25,23 @@ export default function SearchBar() {
         const query = event.target.value;
 
         searchQuery(query);
-
+        navigate({ to: '/search', search: { movie: query } });
     };
+
+
+    const handleBlur = () => {
+        setShouldShowSearch(false);
+    }
+    const handleSearchClick = () => {
+        setShouldShowSearch(true);
+    };
+
+
 
     return (
         <div className="flex items-center">
             {shouldShowSearch ? (
-                <div className="flex items-center bg-black/80 border border-white/20 rounded-sm px-3 py-2 min-w-[280px] backdrop-blur-sm">
+                <div className="flex items-center bg-black/80 border border-white/20 rounded-sm px-3 py-2 sm:w-full md:min-w-[280px] backdrop-blur-sm">
                     <Search
                         size={20}
                         className="text-white/70 mr-3 flex-shrink-0"

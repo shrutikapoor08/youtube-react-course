@@ -2,7 +2,7 @@ import heroBg from "../assets/hero-background.jpg";
 
 const Hero = () => {
     return (
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden w-full bg-gradient-to-br from-black via-gray-900 to-black">
+        <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden w-full bg-gradient-to-br from-black via-gray-900 to-black">
             <img
                 src={heroBg}
                 alt="Hero background"
@@ -25,7 +25,7 @@ const Hero = () => {
                     </button>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
