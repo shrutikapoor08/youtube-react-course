@@ -21,4 +21,6 @@ export const Route = createRootRoute({
       />
     </>
   ),
+  errorComponent: ({ error }) => <>Something wrong happened {error.message}</>,
+  notFoundComponent: () => <div>404 - Page Not Found</div>,
 })

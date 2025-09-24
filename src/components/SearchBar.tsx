@@ -1,11 +1,15 @@
 import { Search } from "lucide-react";
 import { useState } from "react";
 import useSearchStore from "../store/searchStore";
+import useBaseMovieStore from "@/store/moviesStore";
+import performSearch from "../lib/performSearch";
 
 export default function SearchBar() {
     const [shouldShowSearch, setShouldShowSearch] = useState(false);
 
-    const performSearch = useSearchStore(state => state.performSearch);
+    const baseMovies = useBaseMovieStore(state => state.baseMovies);
+    const setResults = useSearchStore(state => state.setResults);
+
 
     const handleBlur = () => {
         setShouldShowSearch(false);
@@ -16,7 +20,9 @@ export default function SearchBar() {
 
 
     const searchQuery = (query: string) => {
-        performSearch(query)
+        const matchingTitles = performSearch(query, baseMovies);
+        console.log('Matching Titles:', matchingTitles.data);
+        setResults(matchingTitles.data);
     };
 
 

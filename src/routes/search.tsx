@@ -13,7 +13,6 @@ function SearchComponent() {
     console.log('Search results from store:', results);
 
 
-
     return (
         <div className='container mx-auto px-4'>
             {results.length > 0 ?
