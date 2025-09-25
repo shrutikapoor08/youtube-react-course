@@ -1,8 +1,8 @@
-import { createFileRoute, useLoaderData } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router'
 import MovieCard from '../components/MovieCard'
 import performSearch from '@/lib/performSearch'
 
-import type { TMDBResponse, Movie } from "@/types";
+import type { TMDBResponse } from "@/types";
 
 
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc';
