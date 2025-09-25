@@ -5,11 +5,12 @@ const Hero = () => {
         <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden w-full bg-gradient-to-br from-black via-gray-900 to-black">
             <img
                 src={heroBg}
-                alt="Hero background"
+                alt=""
+                aria-hidden="true"
                 className="absolute inset-0 w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-br from-black/95 via-black/70 to-black/95 pointer-events-none" />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-black/95 via-black/70 to-black/95 pointer-events-none" />
 
             <div className="relative z-10 text-center max-w-[600px] sm:px-3 md:px-6 flex flex-col items-center w-full">
                 <div className="text-white">
