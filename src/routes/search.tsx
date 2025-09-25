@@ -1,6 +1,5 @@
 import { createFileRoute, useLoaderData } from '@tanstack/react-router'
 import MovieCard from '../components/MovieCard'
-import useSearchStore from '@/store/searchStore'
 import performSearch from '@/lib/performSearch'
 
 import type { TMDBResponse, Movie } from "@/types";
