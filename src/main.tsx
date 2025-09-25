@@ -11,12 +11,6 @@ import { routeTree } from './routeTree.gen'
 import './styles.css'
 import reportWebVitals from './reportWebVitals.ts'
 
-// Import your Publishable Key
-const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
-
-if (!PUBLISHABLE_KEY) {
-  throw new Error('Add your Clerk Publishable Key to the .env file')
-}
 
 // Create a new router instance
 const router = createRouter({
@@ -42,7 +36,8 @@ if (rootElement && !rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <QueryClientProvider client={new QueryClient()}>
-        <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+        <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+        }>
           <RouterProvider router={router} />
         </ClerkProvider>
       </QueryClientProvider>
