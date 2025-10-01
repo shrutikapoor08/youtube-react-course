@@ -28,20 +28,20 @@ This hands-on project covers everything you need to master React in 2025:
 - Folder structure & code organization
 - Development environment configuration
 
-### Module 3: Foundational UI Components
+### Module 2: Foundational UI Components
 - Building Header and Hero components
 - Setting up Tailwind CSS v4
 - Responsive layout (mobile → desktop)
 - CSS best practices
 
-### Module 4: Building Movie Components
+### Module 3: Building Movie Components
 - Rendering lists in React
 - Props and TypeScript types
 - Integrating Shadcn UI components
 - Styling MovieList and MovieCard components
 - **Homework**: Add pagination numbers
 
-### Module 5: Search Functionality
+### Module 4: Search Functionality
 - `useState` hook for search state
 - Event handling (onClick, onChange)
 - Building a search bar component
@@ -49,18 +49,18 @@ This hands-on project covers everything you need to master React in 2025:
   - Dismiss search when clicking away
   - Implement debouncing (500ms delay)
 
-### Module 6: State Management with Zustand
+### Module 5: State Management with Zustand
 - When local state breaks down
 - Introduction to Zustand store
 - Global state management patterns
 - Search implementation with Zustand
 
-### Module 7: Routing Implementation
+### Module 6: Routing Implementation
 - Setting up TanStack Router
 - Creating routes and navigation
 - Route parameters and dynamic routing
 
-### Module 8: Data & APIs
+### Module 7: Data & APIs
 - `useEffect` hook deep dive
 - Fetching data from TMDB API
 - Handling loading and error states
@@ -71,7 +71,7 @@ This hands-on project covers everything you need to master React in 2025:
   - [useEffect Guide by Dan Abramov](https://overreacted.io/a-complete-guide-to-useeffect/)
   - [TMDB API Documentation](https://api.themoviedb.org/3/movie/popular?language=en-US)
 
-### Module 9: Testing & Accessibility
+### Module 8: Testing & Accessibility
 #### Accessibility
 - Chrome and Firefox accessibility tools
 - Keyboard navigation testing
@@ -83,25 +83,25 @@ This hands-on project covers everything you need to master React in 2025:
 - Testing custom hooks
 - Testing edge cases (empty props, null values, error states)
 - End-to-end testing concepts
+- **Homework**: Add test cases for your custom hooks
 
-### Module 10: Authentication
+### Module 9: Authentication
 - Integrating [Clerk](https://go.clerk.com/CYrvZF2) for authentication
 - Protected routes
 - User session management
 - **Homework**: Add email field in banner
 
-### Module 11: Advanced Data Loading
+### Module 10: Advanced Data Loading
 - TanStack Query for data fetching
 - Fixing useEffect bugs
 - `useRef` for infinite scroll
 - Implementing infinite queries
 - **Homework**: Implement infinite scroll with IntersectionObserver
 
-### Module 12: Video Player
+### Module 11: Homework Module - Implement Video Player
 - Building a VideoPlayer component
 - Opening movies in new pages
 - Accessible video controls
-- **Homework**: Complete VideoPlayer implementation
 
 #### Sample Movies for Testing
 Use these free sample videos (Creative Commons licensed) to test your VideoPlayer component:
@@ -148,14 +148,14 @@ Use these free sample videos (Creative Commons licensed) to test your VideoPlaye
 
 **Note**: All videos are hosted on Google Cloud Storage and are free to use for testing purposes. They are licensed under Creative Commons and are perfect for building and testing your video player functionality.
 
-### Module 13: Performance Optimization
+### Module 12: Performance Optimization
 - Core Web Vitals (LCP, FCP)
 - `React.memo` for component memoization
 - `useMemo` and `useCallback` hooks
 - Image optimization and lazy loading
 - Code splitting strategies
 
-### Module 14: Deployment
+### Module 13: Deployment
 - Production build optimization
 - Deploying to Vercel/Netlify
 - Environment configuration for production
