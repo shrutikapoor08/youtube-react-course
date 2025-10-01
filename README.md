@@ -4,6 +4,8 @@ Build a production-ready Netflix clone from scratch using React 19, TypeScript, 
 
 🎥 **[Watch the Full Course on YouTube](https://www.youtube.com/watch?v=X2Rcp87yl4s)**
 
+All the code is divided in branches by modules. Start with [module-3-foundational-ui](https://github.com/shrutikapoor08/youtube-react-course/tree/module-3-foundational-ui)
+
 ## 📚 Course Overview
 
 This hands-on project covers everything you need to master React in 2025:
