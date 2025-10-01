@@ -1,1 +1,303 @@
-# youtube-react-course
+# React Netflix Clone - Complete Course
+
+Build a production-ready Netflix clone from scratch using React 19, TypeScript, and modern web technologies. This comprehensive course takes you from beginner to advanced React developer.
+
+🎥 **[Watch the Full Course on YouTube](https://www.youtube.com/watch?v=X2Rcp87yl4s)**
+
+## 📚 Course Overview
+
+This hands-on project covers everything you need to master React in 2025:
+- React 19 fundamentals and advanced patterns
+- State management with Zustand
+- Routing with TanStack Router
+- Data fetching with TanStack Query
+- Authentication with Clerk
+- Testing with Vitest and React Testing Library
+- Performance optimization techniques
+- Production deployment
+
+## 🗂️ Course Modules
+
+### Module 0: Introduction
+- Course overview and what you'll build
+- Technologies: React, Vite, TypeScript, Tailwind CSS, Zustand
+- Setting up your learning environment
+
+### Module 1: Kickoff & Setup
+- Project setup with Vite + TypeScript
+- Folder structure & code organization
+- Development environment configuration
+
+### Module 3: Foundational UI Components
+- Building Header and Hero components
+- Setting up Tailwind CSS v4
+- Responsive layout (mobile → desktop)
+- CSS best practices
+
+### Module 4: Building Movie Components
+- Rendering lists in React
+- Props and TypeScript types
+- Integrating Shadcn UI components
+- Styling MovieList and MovieCard components
+- **Homework**: Add pagination numbers
+
+### Module 5: Search Functionality
+- `useState` hook for search state
+- Event handling (onClick, onChange)
+- Building a search bar component
+- **Homework**: 
+  - Dismiss search when clicking away
+  - Implement debouncing (500ms delay)
+
+### Module 6: State Management with Zustand
+- When local state breaks down
+- Introduction to Zustand store
+- Global state management patterns
+- Search implementation with Zustand
+
+### Module 7: Routing Implementation
+- Setting up TanStack Router
+- Creating routes and navigation
+- Route parameters and dynamic routing
+
+### Module 8: Data & APIs
+- `useEffect` hook deep dive
+- Fetching data from TMDB API
+- Handling loading and error states
+- Environment variables and API keys
+- Creating custom hooks (`useMovies`, `useSearchMovies`)
+- **Homework**: Implement `useSearchMovies` hook
+- **Reading**: 
+  - [useEffect Guide by Dan Abramov](https://overreacted.io/a-complete-guide-to-useeffect/)
+  - [TMDB API Documentation](https://api.themoviedb.org/3/movie/popular?language=en-US)
+
+### Module 9: Testing & Accessibility
+#### Accessibility
+- Chrome and Firefox accessibility tools
+- Keyboard navigation testing
+- **Homework**: Test with screen reader
+
+#### Testing
+- Unit testing with Vitest
+- Component testing with React Testing Library
+- Testing custom hooks
+- Testing edge cases (empty props, null values, error states)
+- End-to-end testing concepts
+
+### Module 10: Authentication
+- Integrating [Clerk](https://go.clerk.com/CYrvZF2) for authentication
+- Protected routes
+- User session management
+- **Homework**: Add email field in banner
+
+### Module 11: Advanced Data Loading
+- TanStack Query for data fetching
+- Fixing useEffect bugs
+- `useRef` for infinite scroll
+- Implementing infinite queries
+- **Homework**: Implement infinite scroll with IntersectionObserver
+
+### Module 12: Video Player
+- Building a VideoPlayer component
+- Opening movies in new pages
+- Accessible video controls
+- **Homework**: Complete VideoPlayer implementation
+
+### Module 13: Performance Optimization
+- Core Web Vitals (LCP, FCP)
+- `React.memo` for component memoization
+- `useMemo` and `useCallback` hooks
+- Image optimization and lazy loading
+- Code splitting strategies
+
+### Module 14: Deployment
+- Production build optimization
+- Deploying to Vercel/Netlify
+- Environment configuration for production
+- Final project walkthrough
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- pnpm (preferred) or npm/yarn
+- TMDB API key ([Get one here](https://www.themoviedb.org/settings/api))
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/shrutikapoor08/youtube-react-course.git
+cd youtube-react-course
+```
+
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Set up environment variables:
+Create a `.env` file at the project root:
+```env
+VITE_TMDB_AUTH_TOKEN=your_tmdb_bearer_token_here
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
+```
+
+4. Run the development server:
+```bash
+pnpm dev
+```
+
+5. Run tests:
+```bash
+pnpm test
+```
+
+## 📂 Project Structure
+
+```
+youtube-react-course/
+├── src/
+│   ├── components/        # React components
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── MovieCard.tsx
+│   │   ├── MovieList.tsx
+│   │   ├── SearchBar.tsx
+│   │   └── VideoPlayer.tsx
+│   ├── hooks/            # Custom React hooks
+│   │   ├── useMovies.ts
+│   │   └── useSearchMovies.ts
+│   ├── store/            # Zustand store
+│   │   └── searchStore.ts
+│   ├── routes/           # TanStack Router routes
+│   ├── data/             # Mock data and types
+│   ├── __tests__/        # Test files
+│   └── tests/            # Additional tests
+├── public/               # Static assets
+├── .env                  # Environment variables
+├── vite.config.ts        # Vite configuration
+├── vitest.config.ts      # Vitest configuration
+└── tailwind.config.js    # Tailwind CSS configuration
+```
+
+## 🌿 Branch Structure
+
+- `main` — Stable baseline and final course snapshot
+- `module-5-search` — Search feature implementation
+- `module-8-fetch-api` — TMDB API integration
+- `module-9-testing` — Testing examples and setup
+- `module-11-tanstack-query` — TanStack Query migration
+
+## 🛠️ Tech Stack
+
+- **Framework**: React 19
+- **Build Tool**: Vite
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Shadcn UI
+- **State Management**: Zustand
+- **Routing**: TanStack Router
+- **Data Fetching**: TanStack Query
+- **Authentication**: Clerk
+- **Testing**: Vitest + React Testing Library
+- **API**: TMDB (The Movie Database)
+
+## 📖 Additional Resources
+
+### Courses
+- [React Fundamentals by Shruti Kapoor (O'Reilly)](https://www.oreilly.com/videos/react-fundamentals-building/0636920981428/)
+- [Become a FullStack Developer (Scrimba)](https://scrimba.com/fullstack-path-c0fullstack?via=shrutikapoor)
+
+### Interview Prep
+- [Practice JavaScript Interviews](https://www.greatfrontend.com/questions/js?fpr=shruti79)
+- [FREE React Interview Questions Book](https://bit.ly/free-react-guide)
+
+### Reading Materials
+- [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+- [Netflix Design System - Hawkins](https://netflixtechblog.com/hawkins-diving-into-the-reasoning-behind-our-design-system-964a7357547)
+
+## 💬 Community & Support
+
+- **Discord**: [Join our community](https://bit.ly/shruti-discord)
+- **Newsletter**: [Stay updated](https://bit.ly/shruti-newsletter)
+- **1:1 Guidance**: [Book a session](https://topmate.io/shrutikapoor08)
+
+## 🎯 Learning Outcomes
+
+By completing this course, you will:
+- ✅ Master React 19 fundamentals and advanced patterns
+- ✅ Build production-ready applications with TypeScript
+- ✅ Implement complex state management solutions
+- ✅ Write comprehensive tests for React applications
+- ✅ Optimize application performance
+- ✅ Deploy applications to production
+- ✅ Have a portfolio-worthy project for interviews
+
+## 📝 Homework Assignments
+
+Throughout the course, you'll complete hands-on assignments:
+- Implement debounced search
+- Add pagination to movie lists
+- Create custom hooks for data fetching
+- Test components with screen readers
+- Build infinite scroll functionality
+- Optimize component rendering
+
+## 🤝 Contributing
+
+Found an issue or want to improve the course? Feel free to:
+- Open an issue
+- Submit a pull request
+- Join the Discord community for discussions
+
+## 📺 Video Chapters
+
+- 00:00 Intro
+- 01:00 Setup a Coding Ritual
+- 02:30 Setup Coding Environment
+- 03:19 Setup React & Code Organization
+- 05:45 Data walkthrough
+- 06:38 Setting up foundational UI components
+- 11:40 Homework
+- 12:15 Building responsive UI
+- 17:39 Debugging CSS specificity issue
+- 19:08 Rendering lists in React
+- 29:30 Adding Shadcn components
+- 39:20 Homework
+- 44:15 Event Handling in React
+- 47:23 Fragments in React
+- 48:50 useState Hook
+- 52:25 Implementing Search function
+- 1:00:43 State Management with Zustand
+- 1:09:35 Implementing Routes with TanStack Router
+- 1:28:57 useEffect Hook
+- 1:32:00 Environment variables
+- 1:36:59 Fetching data from TMDB API
+- 1:39:19 Error Boundaries
+- 1:45:28 Creating custom React hooks
+- 1:55:14 Accessibility
+- 2:11:11 Testing with Vitest
+- 2:17:15 Authentication with Clerk
+- 2:22:39 TanStack Router data loading
+- 2:26:02 TanStack Query
+- 2:30:44 Performance Optimization
+- 2:41:16 Deployment
+- 2:47:29 Recap
+
+## 🔗 Links
+
+- **GitHub**: [shrutikapoor08/youtube-react-course](https://github.com/shrutikapoor08/youtube-react-course)
+- **YouTube**: [Full Course Video](https://www.youtube.com/watch?v=X2Rcp87yl4s)
+- **Website**: [shrutikapoor.dev](https://shrutikapoor.dev/)
+- **Twitter**: [@shrutikapoor08](https://twitter.com/shrutikapoor08)
+
+## 📄 License
+
+This project is open source and available for educational purposes.
+
+---
+
+⭐ If you find this course helpful, please star the repository and share it with others!
+
+**Made with ❤️ by [Shruti Kapoor](https://shrutikapoor.dev/)**
