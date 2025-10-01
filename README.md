@@ -103,6 +103,51 @@ This hands-on project covers everything you need to master React in 2025:
 - Accessible video controls
 - **Homework**: Complete VideoPlayer implementation
 
+#### Sample Movies for Testing
+Use these free sample videos (Creative Commons licensed) to test your VideoPlayer component:
+
+1. **Big Buck Bunny** (Blender Foundation)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4`
+   - Description: A giant rabbit with a heart bigger than himself seeks comical revenge on three rodents
+
+2. **Sintel** (Blender Foundation)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4`
+   - Description: A 15-minute independently produced short film about a girl's quest
+
+3. **Tears of Steel** (Blender Foundation)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4`
+   - Description: A compelling sci-fi film made with open source tools
+
+4. **Elephant Dream** (Blender Foundation)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4`
+   - Description: The first Blender Open Movie from 2006
+
+5. **For Bigger Blazes** (Google)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4`
+   - Description: HBO GO with Chromecast demo
+
+6. **For Bigger Escape** (Google)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4`
+   - Description: Chromecast with Google Play Movies demo
+
+7. **For Bigger Fun** (Google)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4`
+   - Description: Chromecast introduction video
+
+8. **For Bigger Joyrides** (Google)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4`
+   - Description: Chromecast with YouTube demo
+
+9. **For Bigger Meltdowns** (Google)
+   - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4`
+   - Description: Chromecast with Netflix demo
+
+10. **Subaru Outback On Street And Dirt** (Garage419)
+    - URL: `http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4`
+    - Description: Smoking Tire takes the Subaru Outback to new heights
+
+**Note**: All videos are hosted on Google Cloud Storage and are free to use for testing purposes. They are licensed under Creative Commons and are perfect for building and testing your video player functionality.
+
 ### Module 13: Performance Optimization
 - Core Web Vitals (LCP, FCP)
 - `React.memo` for component memoization
@@ -250,40 +295,6 @@ Found an issue or want to improve the course? Feel free to:
 - Open an issue
 - Submit a pull request
 - Join the Discord community for discussions
-
-## 📺 Video Chapters
-
-- 00:00 Intro
-- 01:00 Setup a Coding Ritual
-- 02:30 Setup Coding Environment
-- 03:19 Setup React & Code Organization
-- 05:45 Data walkthrough
-- 06:38 Setting up foundational UI components
-- 11:40 Homework
-- 12:15 Building responsive UI
-- 17:39 Debugging CSS specificity issue
-- 19:08 Rendering lists in React
-- 29:30 Adding Shadcn components
-- 39:20 Homework
-- 44:15 Event Handling in React
-- 47:23 Fragments in React
-- 48:50 useState Hook
-- 52:25 Implementing Search function
-- 1:00:43 State Management with Zustand
-- 1:09:35 Implementing Routes with TanStack Router
-- 1:28:57 useEffect Hook
-- 1:32:00 Environment variables
-- 1:36:59 Fetching data from TMDB API
-- 1:39:19 Error Boundaries
-- 1:45:28 Creating custom React hooks
-- 1:55:14 Accessibility
-- 2:11:11 Testing with Vitest
-- 2:17:15 Authentication with Clerk
-- 2:22:39 TanStack Router data loading
-- 2:26:02 TanStack Query
-- 2:30:44 Performance Optimization
-- 2:41:16 Deployment
-- 2:47:29 Recap
 
 ## 🔗 Links
 
